@@ -1,14 +1,12 @@
-import pic1 from '../img/pic2.png'
-import pic2 from '../img/pic3.png'
-
-function TinyCard() {
+function TinyCard({image, cardType, Date, content, display}) {
     return (
       <div className="TinyCard">
-        <div className="tiny-card-img" style={{ backgroundImage: `url(${pic2})` }}></div>
+        <div className="tiny-card-img" style={{ backgroundImage: `url(${image})` }}></div>
         <div className="mini-card-content">
-            <p className='card-type'>PRESS RELEASE</p>
-            <h3>Apple annnounces changes to iOS,Safari, and the App Store in the European Union</h3>
-            <p className='time-stamp'>25 January 2024</p>
+            <p className='card-type'>{cardType}</p>
+            <h3>{content}</h3>
+            <p className='time-stamp'>{Date}</p>
+            <div className="add" style={{display: display}}>+</div>
         </div>
         
       </div>

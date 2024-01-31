@@ -37,7 +37,7 @@ function Newsroom() {
         </div>
         <ColoredLine color="black" />
         <div className="subContainer">
-        <NewsroomCard image={podcast2} cardType="QUICK READ" Date="28 November 2023" headlines="Apple shares the most popular podcasts of 2023" />
+        <NewsroomCard image={podcast2} cardType="⚡QUICK READ" Date="28 November 2023" headlines="Apple shares the most popular podcasts of 2023" />
         <NewsroomCard image={appstore2} cardType="UPDATE" Date="14 November 2023" headlines="Meet the 2023 App Store Award finalists" />
         </div>
         <ColoredLine color="black" />
