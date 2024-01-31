@@ -1,0 +1,365 @@
+.App{
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    margin: 0;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+h3{
+    margin: 0;
+}
+
+.LatestNews,
+.Newsroom,
+.Footer{
+    background-color: var(--primary-bg);
+}
+
+
+
+.LatestNews{
+   padding: 2rem;
+}
+
+.LatestNews>h2{
+    margin-left: 10%;
+}
+
+.container{
+    display: grid;
+    justify-content:center;
+    align-items: center;
+    padding:1rem 0.5rem;
+    gap: 1rem;
+    grid-template-columns: repeat(1fr,2);
+    /* grid-template-rows: repeat(1fr, 4); */
+}
+
+
+.Card{
+    width: 80%;
+    min-width: 300px;
+    aspect-ratio: 20/6;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-block: 1rem;
+    justify-self: center;
+    grid-column: 1/3;
+}
+
+.Card>.img{
+    width: 70%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: var(--primary-bg);
+    background-image: url(./img/pic1.png);
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.card-content{
+    width: 30%;
+    background-color: #fff;
+    padding: 1rem;
+    display: grid;
+    grid-template-rows: 10% 1fr 10%;
+    gap: 1rem;
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 750px) {
+
+    .Card{
+        width: 80%;
+        min-width: 300px;
+        aspect-ratio: 16/9;
+        display: flex;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-block: 1rem;
+        justify-self: center;
+        grid-column: 1/3;
+    }
+   
+    .Card>.img{
+        width: 50%;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        background-color: var(--primary-bg);
+        background-image: url(./img/pic1.png);
+        background-position: center;
+        background-size:cover;
+        background-repeat: no-repeat;
+    }
+    
+    .card-content{
+        width: 50%;
+        background-color: #fff;
+        padding: 1rem .5rem;
+        display: grid;
+        grid-template-rows: 14px 1fr 10%;
+        gap: 15px;
+        font-size: 12px;
+        border-top-right-radius: var(--border-radius);
+        border-bottom-right-radius: var(--border-radius);
+    }
+    
+  }
+
+  @media only screen and (max-width: 1000px){
+    .card-content{
+        font-size: 12px;
+    }
+  }
+
+.cardsection1{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    grid-column: 1/3;
+    margin-bottom: 1rem;
+}
+
+.CardMini{
+    width: 40%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+.CardMini .mini-card-img{
+   width:100%;
+   aspect-ratio: 16/9;
+   background-position: center;
+   background-size:cover;
+   background-repeat: no-repeat;
+}
+
+.mini-card-content{
+    background-color: #fff;  
+    padding: .5rem; 
+}
+
+.GradientCard{
+    width: 40%;
+    min-width: 300px;
+    aspect-ratio: 16/9;
+    background-image: linear-gradient(to bottom, #ffffff00, #000),url('./img/pic3.png') ;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    color: #fff;
+    display: flex;
+    align-items: end;
+}
+
+.gradient-card-content{
+    padding: 1rem;
+}
+
+.cardsection2{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 1.5rem;
+    justify-content: center;
+    grid-column:1/3;
+    grid-row: 4;
+    margin-bottom: 1rem;
+}
+
+.TinyCard{
+    width: calc(25% + 1.5rem);
+    min-width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+.TinyCard .tiny-card-img{
+    width:100%;
+    aspect-ratio: 16/9;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+ }
+
+ .Stories{
+    text-align: center;
+    padding-block: 1rem 2rem;
+ }
+
+.Stories .heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.Stories .heading h2{
+    text-align: center;
+    font-size: 32px;
+}
+
+.Stories .heading h2>img{
+    width: 25px;
+    height: 25px;
+}
+
+.Stories .heading p{
+    font-weight: 700;
+    width: 300px;
+    text-align: center;
+}
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.StoryGradientCard{
+    width: 80%;
+    min-width: 300px;
+    aspect-ratio: 16/9;
+    background-image: linear-gradient(to bottom, #ffffff00, #000),url('./img/pic2.png') ;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius: calc(var(--border-radius) + 20px);
+    overflow: hidden;
+    color: #fff;
+    display: flex;
+    align-items: end;
+}
+
+.mini-card-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.MiniStoryGradientCard{
+    width: 30%;
+    min-width: 300px;
+    aspect-ratio: 1/1;
+    background-image: linear-gradient(to bottom, #ffffff00, #000),url('./img/pic3.png') ;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius: calc(var(--border-radius) + 20px);
+    overflow: hidden;
+    color: #fff;
+    display: flex;
+    align-items: end;
+}
+
+.story-btn{
+    background-color: transparent;
+    border-radius: 30px;
+    font-size: 16px;
+    text-align: center;
+    padding: .5rem 1rem;
+    margin-block: 1rem;
+}
+
+
+.Newsroom{
+    padding: 3rem 10%;
+}
+
+.Newsroom .Newsroom-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.Newsroom>h2{
+    text-align: left;
+}
+
+.subContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 1rem;
+    justify-content: center;
+    width: 100%;
+}
+
+.NewsroomCard{
+    display: flex;
+    width: 45%;
+    min-width: 300px;
+    height: 150px;
+    gap: 2rem;
+    padding: 1rem;
+    margin: 0;
+    justify-content: flex-start;
+}
+
+.NewsroomCard .img-container{
+    height: 100%;
+    aspect-ratio: 1/1;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.Newsroom-content{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-around;
+    gap: -0.5rem;
+}
+
+.Footer{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 0 10%;
+}
+
+.title-footer{
+    margin: 1rem 0;
+}
+
+.title-footer>h3{
+    display: flex;
+    align-items: center;
+    opacity: .6;
+}
+
+.footer-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+
+.footer-container>*{
+    margin-top: 1rem;
+}
+
+.footer-container ul li{
+    padding:5px 0;
+}
